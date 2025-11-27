@@ -1,0 +1,26 @@
+
+{
+  "vconcat": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhidalgo-05/COP-4283/main/clean_football_data.csv"
+      },
+      "mark": "point",
+      "encoding": {
+        "x": {"field": "num_seasons", "type": "quantitative"},
+        "y": {"field": "total_seasons_country", "type": "quantitative"}
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jhidalgo-05/COP-4283/main/clean_football_data.csv"
+      },
+      "mark": "bar",
+      "encoding": {
+        "x": {"field": "num_seasons", "type": "quantitative", "bin": true},
+        "y": {"aggregate": "count", "type": "quantitative"}
+      }
+    }
+  ],
+  "config": {}
+}
